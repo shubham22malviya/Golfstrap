@@ -1,0 +1,154 @@
+body{
+   
+}
+.universal-padding{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#bg-iamgeBody{
+   /* background-image: url(images/1026\ [Converted].png);
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat; */
+}
+
+#navBar{
+  
+   
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 600 !important;
+}
+#topbar h2{
+    align-content: center !important;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+/* special golf products  section*/
+/* button group  */
+.pro-group:hover{
+    background: linear-gradient(to right,#779d09 , #4a7012 );
+  }
+
+/* latest blog post  */
+#float{
+    display: flex;
+}
+#card-float{
+    float: left;
+    height: 170px;
+    width: 180px;
+    padding: 20px;
+}
+
+
+
+/* media queries  */
+@media (max-width: 575px){
+    #topbar img{
+        height: 300px;
+    }
+    #topbar h2,p{
+        padding-top: 0px;
+        padding: 0px;
+    }
+    .margin-member{
+        margin-bottom: 10px;
+    }
+    .card-img-overlay h2{
+        font-size: 40px;
+    }
+}
+@media (min-width:600px ) and (max-width:1299px) {
+    #topbar h2{
+        text-align: center;
+    }
+    #topbar p{
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+    }
+    #topbar button{
+        margin-right: 50%;
+        margin-left: 40%;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 1300px){
+    #topbar img{
+        height: 500px;
+    }
+    #topbar h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    #topbar p{
+        align-items: center;
+        padding: 60px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #topbar button{
+        margin-left: 50%;
+        height: 60px;
+        width: 150px;
+    }
+    #topbar p::after{
+        content: " adipisicing elit. Cupiditate quas iste quidem culpa quos consequatur veniam repudiandae facere sint sapiente expedita ad alias dolores eaque molestias dolor officiis, explicabo atque";
+    }
+}
+
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: all ease 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader h1{
+    font-size: 6vw;
+    color: transparent ;
+    background: linear-gradient(to right, orange, rgb(255, 81, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+}
+.carousel-indicators{
+    
+   
+    bottom: 35%;
+    
+}
+#loader h1:nth-child(2){
+   animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+ }
+@keyframes load{
+    0%{
+       opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
